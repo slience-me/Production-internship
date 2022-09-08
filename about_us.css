@@ -1,4 +1,5 @@
 /*全部*/
+/* coderby:slience_me */
 * {
     margin: 0;
     padding: 0;
@@ -63,7 +64,7 @@
     text-decoration: none;
     font-size: 14px;
 }
-
+/* coderby:slience_me */
 /*顶部右边 设置样式 */
 .nav-bar-right > ul > li:hover,
 .nav-bar-right > ul > li > a:hover {
@@ -106,8 +107,8 @@
     text-decoration: none;
     color: #3a8ee6;
 }
-
-
+/* coderby:slience_me */
+/* coderby:slience_me */
 .text-grey {
     height: 36px;
     width: 130px;
@@ -123,7 +124,7 @@
     display: none;
     font-size: 10px;
 }
-
+/* coderby:slience_me */
 /*弹出框 */
 .nav-bar-right .func-2:hover > div {
     display: block;
@@ -186,7 +187,7 @@
     border-bottom: 2px solid #ccc;
     height: 2000px;
 }
-
+/* coderby:slience_me */
 .content > h2 {
     text-align: center;
     margin-top: 20px;
@@ -211,7 +212,7 @@
     float: left;
     text-align: center;
 }
-
+/* coderby:slience_me */
 .content > .func-1 > div > ul {
     list-style: none;
     text-align: center;
@@ -246,7 +247,7 @@
     list-style: none;
     /*border: 1px solid;*/
 }
-
+/* coderby:slience_me */
 .content > .func-1 .text-blue > a{
     text-decoration: none;
     color: #3a8ee6;
@@ -263,7 +264,7 @@
     width: 35%;
     margin: 0 auto;
 }
-
+/* coderby:slience_me */
 .content > .func-1 > div > div > ul > li > a{
     text-decoration: none;
     height: 50px;
@@ -299,7 +300,7 @@
     float: left;
     text-align: center;
 }
-
+/* coderby:slience_me */
 .content > .func-2 > div:hover {
     color: #b4bccc;
     cursor: pointer;
@@ -355,7 +356,7 @@ footer div {
     font-size: 12px;
     color: white;
 }
-
+/* coderby:slience_me */
 footer div a {
     font-size: 12px;
     text-decoration: none;
@@ -367,3 +368,4 @@ footer .tab-bar {
     text-align: center;
     line-height: 30px;
 }
+/* coderby:slience_me */
