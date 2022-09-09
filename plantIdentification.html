@@ -1,11 +1,11 @@
 <!--coderby:slience_me-->
-<!--time: 2022/9/6 22:39 -->
+<!--time: 2022/9/9 12:07 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/plantIdentification.css">
 </head>
 <body>
 <div class="nav-bar">
@@ -83,94 +83,55 @@
     </div>
 </div>
 <!--coderby:slience_me-->
-<div class="content-img"></div>
+<div class="content-img">
+
+</div>
 <!--coderby:slience_me-->
 <div class="content">
-    <h2>AI平台 打造极致产品</h2>
+    <h2>功能介绍</h2>
     <div class="func-1">
         <div>
-            <h2 class="h2_1">图像处理</h2>
+            <h2 class="h2_1">识别物体名称</h2>
             <div>
                 <ul>
-                    <li class="text-blue"><a href="#">图像分类</a></li>
-                    <li class="text-blue"><a href="#">语义分割</a></li>
-                    <li class="text-blue"><a href="#">风格迁移</a></li>
-                    <li class="text-grey"><a href="#">图像生成</a></li>
-                    <li class="text-grey"><a href="#">目标检测</a></li>
-                    <li class="text-grey"><a href="#">姿态识别</a></li>
+                    <li class="text-little">支持识别上百种花卉，返回植物名称</li>
                 </ul>
             </div>
         </div>
         <!--coderby:slience_me-->
         <div>
-            <h2 class="h2_2">视频处理</h2>
+            <h2 class="h2_2">获取百科信息</h2>
             <div>
                 <ul>
-                    <li class="text-grey"><a href="#">视频摘要</a></li>
-                    <li class="text-grey"><a href="#">视频分类</a></li>
-                    <li class="text-blue"><a href="#">视频人脸检测</a></li>
-                    <li class="text-grey"><a href="#">物体识别</a></li>
-                </ul>
-            </div>
-        </div>
-        <div>
-            <h2 class="h2_3">视频处理</h2>
-            <div>
-                <ul>
-                    <li class="text-grey"><a href="#">情感分析</a></li>
-                    <li class="text-grey"><a href="#">文本摘要</a></li>
-                    <li class="text-grey"><a href="#">语音识别</a></li>
-                    <li class="text-grey"><a href="#">语法分析</a></li>
-                    <li class="text-grey"><a href="#">句法分析</a></li>
-                    <li class="text-grey"><a href="#">文本相似度</a></li>
-                    <li class="text-grey"><a href="#">文本分类</a></li>
+                    <li class="text-little">支持返回百科词条URL</li>
                 </ul>
             </div>
         </div>
     </div>
-    <hr>
-    <h2>数据服务</h2>
+    <h2>功能演示</h2>
     <!--coderby:slience_me-->
     <div class="func-2">
-        <div>
-            <div>
-                <img src="images/index/img1.jpg" alt="image1">
-            </div>
-            <h2>数据采集能力</h2>
+        <div class="img-big">
+            <img src="./images/xiao1.jpg" alt="image1" id="img-big">
         </div>
-        <div>
-            <div>
-                <img src="images/index/img2.jpg" alt="image1">
-            </div>
-            <h2>大数据服务</h2>
+        <div class="img-small" id="img-small">
+            <img src="./images/xiao1.jpg" alt="">
+            <img src="./images/xiao2.jpg" alt="">
+            <img src="./images/xiao3.jpg" alt="">
+            <img src="./images/xiao4.jpg" alt="">
         </div>
     </div>
-    <hr>
-    <h2>解决方案</h2>
+
+    <h2>应用场景</h2>
     <div class="func-3">
-        <div>
-            <div>
-                <img src="images/index/img3.jpg" alt="image1">
+        <div class="left-text">
+            <h2 class="h2_1">拍照识图</h2>
+            <div class="text-little">
+                在移动设备上，通过拍摄图片，识别图中花卉植物，广泛应用于拍照识图应用中。
             </div>
-            <h2>疲劳驾驶监测</h2>
         </div>
-        <div>
-            <div>
-                <img src="images/index/img4.jpg" alt="image1">
-            </div>
-            <h2>图片无损放大</h2>
-        </div>
-        <div>
-            <div>
-                <img src="images/index/img5.jpg" alt="image1">
-            </div>
-            <h2>人脸识别</h2>
-        </div>
-        <div>
-            <div>
-                <img src="images/index/img6.jpg" alt="image1">
-            </div>
-            <h2>地址识别</h2>
+        <div class="right-img">
+            <img src="images/plant/plant-feature.ac56883d.jpg" alt="image1">
         </div>
     </div>
 </div>
@@ -188,5 +149,20 @@
     </div>
 </footer>
 </body>
+<script>
+    var imgs = document.getElementsByTagName('img');
+    console.log(imgs)
+    var imgMax = document.getElementById('img-big');
+    console.log(imgMax)
+    // 2 遍历小图,对每个小图绑定点击事件
+    for (let i = 0; i < imgs.length; i++) {
+        imgs[i].onclick = changeImg;
+    }
+    // 3 点击之后,获取小图src,并设置到大图的背景图
+    function changeImg() {
+        console.log(this.src);
+        imgMax.src = this.src;
+    }
+</script>
 </html>
 <!--coderby:slience_me-->

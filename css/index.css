@@ -216,7 +216,7 @@
 
 .content-img {
   height: 360px;
-  background-image: url(images/index/首页图.0775a553.jpg);
+  background-image: url(../images/index/首页图.0775a553.jpg);
   background-size: 100% 100%;
   background-repeat: space;
 }
@@ -257,7 +257,7 @@
 }
 
 .content > .func-1 > div > .h2_1{
-  background-image: url("images/index/相册 (2).png");
+  background-image: url("../images/index/相册 (2).png");
   background-repeat: no-repeat;
   height: 100px;
   text-align: center;
@@ -265,7 +265,7 @@
   margin-left: 50px;
 }
 .content > .func-1 > div > .h2_2{
-  background-image: url("images/index/相机 (1).png");
+  background-image: url("../images/index/相机 (1).png");
   background-repeat: no-repeat;
   height: 100px;
   text-align: center;
@@ -273,7 +273,7 @@
   margin-left: 50px;
 }
 .content > .func-1 > div > .h2_3 {
-  background-image: url("images/index/灯泡 (1).png");
+  background-image: url("../images/index/灯泡 (1).png");
   background-repeat: no-repeat;
   height: 100px;
   text-align: center;
