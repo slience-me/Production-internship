@@ -1,0 +1,182 @@
+/*全部*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 大图 */
+.content-img {
+  height: 360px;
+  background-image: url(/images/index/index.jpg);
+  background-size: 100% 100%;
+  background-repeat: space;
+}
+
+.content {
+  border-bottom: 2px solid #ccc;
+  height: 2000px;
+}
+
+.content > h2 {
+  text-align: center;
+  margin-top: 20px;
+  /*text-indent: 3px;*/
+  font-size: 30px;
+  font-weight: 400;
+}
+
+
+.content > .func-1 {
+  width: 1000px;
+  /*background-color: red;*/
+  height: 500px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.content > .func-1 > div {
+  width: 33%;
+  height: 450px;
+  /*border: 1px solid;*/
+  /* background-color: red; */
+  float: left;
+  text-align: center;
+}
+
+.content > .func-1 > div > ul {
+  list-style: none;
+  text-align: center;
+}
+
+.content > .func-1 > div > .h2_1 {
+  background-image: url("../images/index/album.png");
+  background-repeat: no-repeat;
+  height: 100px;
+  text-align: center;
+  line-height: 60px;
+  margin-left: 50px;
+}
+
+.content > .func-1 > div > .h2_2 {
+  background-image: url("../images/index/camera.png");
+  background-repeat: no-repeat;
+  height: 100px;
+  text-align: center;
+  line-height: 60px;
+  margin-left: 50px;
+}
+
+.content > .func-1 > div > .h2_3 {
+  background-image: url("../images/index/dengPao.png");
+  background-repeat: no-repeat;
+  height: 100px;
+  text-align: center;
+  line-height: 60px;
+  margin-left: 50px;
+}
+
+.content > .func-1 > div > div > ul {
+  list-style: none;
+  /*border: 1px solid;*/
+}
+
+.content > .func-1 .text-blue {
+  font-size: 18px;
+  list-style: none;
+  line-height: 50px;
+  color: #3a8ee6;
+  /*border: 1px solid;*/
+  border-bottom: #ccc 2px solid;
+  width: 35%;
+  margin: 0 auto;
+}
+
+.content > .func-1 .text-blue > a {
+  text-decoration: none;
+  color: #3a8ee6;
+  font-size: 18px;
+  line-height: 50px;
+}
+
+.content > .func-1 > div > div > ul > li > a {
+  text-decoration: none;
+  height: 50px;
+  font-size: 18px;
+  color: #ccc;
+  line-height: 50px;
+}
+
+.content > .func-1 > div > div > ul > li {
+  height: 50px;
+  font-size: 18px;
+  color: #ccc;
+  list-style: none;
+  border-bottom: #ccc 2px solid;
+  line-height: 50px;
+  width: 35%;
+  margin: 0 auto;
+}
+
+.content > .func-2 {
+  width: 1000px;
+  /*background-color: red;*/
+  height: 500px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+
+.content > .func-2 > div {
+  width: 50%;
+  height: 400px;
+  /* border: 1px solid; */
+  /* background-color: red; */
+  float: left;
+  text-align: center;
+}
+
+.content > .func-2 > div:hover {
+  color: #b4bccc;
+  cursor: pointer;
+}
+
+.content > .func-3 {
+  width: 1200px;
+  /*background-color: red;*/
+  height: 500px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.content > .func-3 > div {
+  width: 25%;
+  height: 500px;
+  /* border: 1px solid; */
+  /* background-color: red; */
+  float: left;
+  text-align: center;
+}
+
+.content > .func-3 > div:hover {
+  color: #b4bccc;
+  cursor: pointer;
+}
+
+.content > .func-3 > div > div > img {
+  width: 250px;
+  height: 250px;
+  /* border: 1px solid; */
+  /* background-color: red; */
+  float: left;
+  margin: 25px 25px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.content > .func-3 > div > h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 444;
+}
+

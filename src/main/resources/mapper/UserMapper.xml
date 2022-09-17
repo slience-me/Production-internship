@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="xyz.slienceme.demo.mapper.UserMapper">
+    <select id="selectUser" parameterType="String" resultType="xyz.slienceme.demo.dao.User">
+        select *
+        from user
+        where username = #{userName}
+          and password = #{passWord}
+    </select>
+    <select id="getStatus" resultType="xyz.slienceme.demo.dao.User">
+        select *
+        from user
+        where id = #{Id}
+    </select>
+    <select id="updateById">
+        update user
+        set status = #{i}
+        where id = #{Id}
+    </select>
+</mapper>

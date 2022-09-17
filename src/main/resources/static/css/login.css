@@ -1,0 +1,51 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    height: 300px;
+}
+
+.content > div {
+    /*background-color: red;*/
+    width: 30%;
+    /*border: 2px solid;*/
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content > div > div {
+    margin-top: 100px;
+    height: 300px;
+    width: 400px;
+    /*background-color: white;*/
+    /*border: 2px solid;*/
+    /*opacity: 0.8;*/
+}
+
+.content > div > div > form > .input-username {
+    margin-top: 50px;
+    height: 30px;
+    width: 280px;
+    padding-left: 20px;
+}
+
+.content > div > div > form > .input-password {
+    height: 30px;
+    width: 280px;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.content > div > div > form > .input-submit {
+    height: 35px;
+    width: 300px;
+    margin-top: 20px;
+    padding-left: 20px;
+    text-align: center;
+    line-height: 35px;
+    background-color: #3a8ee6;
+    color: white;
+}

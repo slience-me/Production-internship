@@ -1,0 +1,132 @@
+<!--time: 2022/9/6 22:39 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+<!--  <link href="/css/index.css" rel="stylesheet">-->
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="/css/base.css" rel="stylesheet">
+  <link href="/css/login.css" rel="stylesheet">
+<!--  <link href="/css/user.css" rel="stylesheet">-->
+  <link href="/layui/css/layui.css" media="all" rel="stylesheet">
+</head>
+<body>
+<div class="nav-bar">
+  <div class="nav-bar-left"><a href="/index">尚云AI平台</a></div>
+  <!-- 导航栏 -->
+  <div class="nav-bar-right">
+    <ul>
+      <li><a href="/index">首页</a></li>
+      <li class="func-1">
+        计算机视觉
+        <div>
+          <div class="func-1-div-1">
+            <ul>
+              <li class="text-solid">图像处理</li>
+              <li class="text-grey">表情识别</li>
+              <li class="text-blue"><a href="#">人脸识别</a></li>
+              <li class="text-blue"><a href="plant.html">植物识别</a></li>
+              <li class="text-grey">图像分类</li>
+              <li class="text-grey">语义分割</li>
+              <li class="text-grey">风格迁移</li>
+              <li class="text-grey">图像生成</li>
+              <li class="text-grey">目标检测</li>
+              <li class="text-grey">姿态识别</li>
+            </ul>
+          </div>
+          <div class="func-1-div-2">
+            <ul>
+              <li class="text-solid">视频处理</li>
+              <li class="text-grey">视频摘要</li>
+              <li class="text-grey">视频分类</li>
+              <li class="text-blue">视频人脸检测</li>
+              <li class="text-grey">物体识别</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="func-2">
+        自然语言处理
+        <div>
+          <ul>
+            <li class="text-grey">情感分析</li>
+            <li class="text-grey">文本摘要</li>
+            <li class="text-grey">语音识别</li>
+            <li class="text-grey">语法分析</li>
+            <li class="text-grey">句法分析</li>
+            <li class="text-grey">文本相似度</li>
+            <li class="text-grey">文本分类</li>
+          </ul>
+        </div>
+      </li>
+      <li class="func-3">
+        数据服务
+        <div>
+          <ul>
+            <li class="text-grey">数据采集能力</li>
+            <li class="text-grey">大数据服务</li>
+          </ul>
+        </div>
+      </li>
+      <li class="func-4">
+        解决方案
+        <div>
+          <ul>
+            <li class="text-grey">疲劳驾驶检测</li>
+            <li class="text-grey">图片无损放大</li>
+            <li class="text-blue"><a href="#">人脸识别</a></li>
+            <li class="text-grey">地址识别</li>
+          </ul>
+        </div>
+      </li>
+      <li><a href="/about">联系我们</a></li>
+      <li class="func-5" id="loginAlready">
+        <a href=""><img class="layui-nav-img" src="/images/profile.jpg"><span id="span_username">XXX</span></a>
+        <div>
+          <ul>
+            <li class="text-black"><a href="javascript:(0);">个人中心</a></li>
+            <li class="text-black"><a href="javascript:(0);">修改密码</a></li>
+            <li class="text-black" style="text-align: center;"><a href="javascript:(0);">退出</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="func-6" id="loginNo">
+        <a href="/login"><img class="layui-nav-img" src="/images/profile.jpg">登录</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="content">
+  <div>
+    <div>
+      <h1>欢迎登录 尚云AI平台</h1>
+      <form method="post" id="loginForm">
+        <input type="text" name="userName" id="userName" class="input-username" placeholder="请输入用户名">
+        <input type="password" name="passWord" id="passWord" class="input-password"  placeholder="请输入密码">
+        <input type="button" class="input-submit" id="login-form" value="登录">
+      </form>
+    </div>
+  </div>
+</div>
+<!-- 页脚 -->
+<footer>
+  <div class="tab-bar">
+    <div> 友情链接：
+      <a href="#">&emsp;星云大数据平台&emsp;</a>
+      <a href="#">&emsp;尚云科技&emsp;</a>
+      <a href="#">&emsp;天亮教育官网&emsp;</a>
+      <a href="#">&emsp;尚云舆情2.0&emsp;</a>
+    </div>
+    <div> Copyright © 2017-2025 河北尚云信息科技有限公司 备案号:冀ICP备17020003号
+    </div>
+  </div>
+</footer>
+</body>
+<script src="/layui/layui.js"></script>
+<script src="/js/init.js"></script>
+<script src="/js/login.js"></script>
+<script>
+</script>
+</html>
+

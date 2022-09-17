@@ -1,0 +1,298 @@
+/* 去除内外边距 */
+.nav-bar {
+  height: 80px;
+  background-color: black;
+  color: white;
+}
+
+/*导航栏左边*/
+.nav-bar-left {
+  width: 30%;
+  height: 80px;
+  /* background-color: red; */
+  float: left;
+  /* 文本居中 */
+  text-align: center;
+  /* 行高和高度一致的时候文本会垂直居中 */
+  line-height: 80px;
+}
+
+/*顶部左边 子标签a*/
+.nav-bar-left > a {
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+/*顶部左边 子标签a 动作*/
+.nav-bar-left > a:hover {
+  color: mediumblue;
+}
+
+/*顶部右边 */
+.nav-bar-right {
+  width: 60%;
+  height: 80px;
+  float: right;
+}
+
+/*顶部右边 子标签ul */
+.nav-bar-right > ul {
+  list-style: none;
+}
+
+/*顶部右边 标题li */
+.nav-bar-right > ul > li {
+  height: 80px;
+  width: 14%;
+  float: left;
+  line-height: 80px;
+  text-align: center;
+  /* 使选项可被鼠标选中 */
+  cursor: pointer;
+}
+
+/*顶部右边 设置样式 */
+.nav-bar-right > ul > li,
+.nav-bar-right > ul > li > a {
+  display: inline-block;
+  height: 80px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/*顶部右边 设置样式 */
+.nav-bar-right > ul > li:hover,
+.nav-bar-right > ul > li > a:hover {
+  color: #3a8ee6;
+}
+
+/*弹出框 */
+/* 计算机视觉 */
+.nav-bar-right .func-1 > div {
+  width: 280px;
+  height: 380px;
+  background-color: white;
+  /*background-color: red;*/
+  display: none;
+  font-size: 10px;
+  /* 避免轮播图遮挡 */
+  position: absolute;
+  z-index: 10;
+}
+
+/*弹出框 */
+.nav-bar-right .func-1:hover > div {
+  display: block;
+}
+
+.nav-bar-right .func-1 > div > .func-1-div-1 {
+  list-style: none;
+  float: left;
+  /*width: 50%;*/
+  /*border: 2px solid;*/
+  /*background-color: #3a8ee6;*/
+}
+
+.nav-bar-right .func-1 > div > .func-1-div-1 > ul {
+  list-style: none;
+  text-align: center;
+  line-height: 36px;
+}
+
+.nav-bar-right .func-1 > div > .func-1-div-2 > ul {
+  list-style: none;
+  text-align: center;
+  line-height: 36px;
+}
+
+.nav-bar-right .func-1 > div > .func-1-div-2 {
+  list-style: none;
+  /*width: 50%;*/
+  float: right;
+  /*border: 2px solid;*/
+  /*background-color: red;*/
+}
+
+.nav-bar-right .func-1 > div > div > ul > li {
+  height: 36px;
+  width: 130px;
+}
+
+.nav-bar-right .func-1 > div > div > ul > .text-solid {
+  /*height: 36px;*/
+  /*width: 130px;*/
+  font-size: 18px;
+  color: black;
+  margin-top: 20px;
+  /*border: 1px solid;*/
+  /*background-color: #eeeeee;*/
+}
+
+.text-blue {
+  height: 36px;
+  width: 130px;
+  font-size: 14px;
+  color: #3a8ee6;
+  /*border: 1px solid;*/
+  /*background-color: aqua;*/
+}
+
+.text-blue a {
+  text-decoration: none;
+  color: #3a8ee6;
+  /*border: 1px solid;*/
+  display: block;
+  /*background-color: darkmagenta;*/
+}
+
+.text-grey {
+  height: 36px;
+  width: 130px;
+  font-size: 14px;
+  color: #ccc;
+  /*border: 1px solid;*/
+  /*background-color: brown;*/
+}
+
+.text-black {
+  height: 36px;
+  width: 100px;
+  font-size: 14px;
+  color: #999999;
+  line-height: 36px;
+  /*border: 1px solid;*/
+  /*background-color: brown;*/
+}
+
+.text-black a {
+  text-decoration: none;
+  color: #999999;
+  line-height: 36px;
+  /*border: 1px solid;*/
+  display: block;
+  /*background-color: darkmagenta;*/
+}
+
+/*弹出框 */
+/* 自然语言处理 */
+.nav-bar-right .func-2 > div {
+  width: 130px;
+  height: 280px;
+  background-color: white;
+  display: none;
+  font-size: 10px;
+  /* 避免轮播图遮挡 */
+  position: absolute;
+  z-index: 10;
+}
+
+/*弹出框 */
+.nav-bar-right .func-2:hover > div {
+  display: block;
+}
+
+.nav-bar-right .func-2 > div > ul {
+  list-style: none;
+  float: left;
+  width: 45%;
+}
+
+/*弹出框 */
+.nav-bar-right .func-3 > div {
+  width: 130px;
+  height: 100px;
+  background-color: white;
+  display: none;
+  font-size: 10px;
+}
+
+/*弹出框 */
+.nav-bar-right .func-3:hover > div {
+  display: block;
+}
+
+.nav-bar-right .func-3 > div > ul {
+  list-style: none;
+  float: left;
+  width: 45%;
+}
+
+/*弹出框 */ /* 解决方案 */
+.nav-bar-right .func-4 > div {
+  width: 130px;
+  height: 180px;
+  background-color: white;
+  display: none;
+  font-size: 10px;
+  /* 避免轮播图遮挡 */
+  position: absolute;
+  z-index: 10;
+}
+
+/*弹出框 */
+.nav-bar-right .func-4:hover > div {
+  display: block;
+}
+
+.nav-bar-right .func-4 > div > ul {
+  list-style: none;
+  float: left;
+  width: 45%;
+}
+
+.nav-bar-right .func-5{
+  display: none;
+}
+/*弹出框 */ /* 解决方案 */
+.nav-bar-right .func-5 > div {
+  width: 100px;
+  height: 110px;
+  background-color: white;
+  display: none;
+  font-size: 10px;
+  /* 避免轮播图遮挡 */
+  position: absolute;
+  z-index: 10;
+}
+
+/*弹出框 */
+.nav-bar-right .func-5:hover > div {
+  display: block;
+}
+
+.nav-bar-right .func-5 > div > ul {
+  border: black 2px solid;
+  list-style: none;
+  float: left;
+  /*width: 45%;*/
+}
+
+footer {
+  height: 100px;
+  background-color: black;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+footer div {
+  font-size: 12px;
+  color: white;
+}
+
+footer div a {
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+}
+
+footer > .tab-bar > div > a:hover {
+  color: #3a8ee6;
+}
+
+footer .tab-bar {
+  padding-top: 20px;
+  text-align: center;
+  line-height: 30px;
+}
