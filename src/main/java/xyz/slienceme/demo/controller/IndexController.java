@@ -39,6 +39,11 @@ public class IndexController {
         return "plant";
     }
 
+    @GetMapping("/face")
+    public String Face() {
+        return "face";
+    }
+
     @GetMapping("/login")
     public String Login() {
         return "login";
@@ -89,6 +94,26 @@ public class IndexController {
     @ResponseBody
     public String getResult(String fileUrl){
         String url  = "http://ai.shangyuninfo.com/api/flowers/identification/processImageByUrl/";
+        // 请求参数
+        Object[] params = {"fileUrl"};
+        Object[] values = {fileUrl};
+        // 封装为对象
+        List<NameValuePair> paramsList = HttpUtil.getParams(params, values);
+
+        // 发送请求
+        try {
+            Object result =	HttpUtil.sendPost(url, paramsList);
+            // 返回识别结果
+            return result.toString();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "";
+    }
+    @RequestMapping(value="/getResultface",method=RequestMethod.POST)
+    @ResponseBody
+    public String getResultface(String fileUrl){
+        String url  = "http://ai.shangyuninfo.com/api/face/detect/processImageByUrl/";
         // 请求参数
         Object[] params = {"fileUrl"};
         Object[] values = {fileUrl};

@@ -1,10 +1,12 @@
+<!--coderby:slience_me-->
+<!--time: 2022/9/17 10:51 -->
 <!--time: 2022/9/9 12:07 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
-  <link href="/css/plant.css" rel="stylesheet">
+  <link href="/css/face.css" rel="stylesheet">
   <link href="/css/base.css" rel="stylesheet">
   <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
   <link href="/layui/css/layui.css" media="all" rel="stylesheet">
@@ -72,14 +74,14 @@
           <ul>
             <li class="text-grey">疲劳驾驶检测</li>
             <li class="text-grey">图片无损放大</li>
-            <li class="text-blue"><a href="/face">人脸识别</a></li>
+            <li class="text-blue"><a href="#">人脸识别</a></li>
             <li class="text-grey">地址识别</li>
           </ul>
         </div>
       </li>
-      <li><a href="/about">联系我们</a></li>
-      <li class="func-5" id="loginAlready">
-        <a href=""><img class="layui-nav-img" src="/images/profile.jpg"><span id="span_username">XXX</span></a>
+      <li><a href="about">联系我们</a></li>
+      <li class="func-5">
+        <a href=""><img class="layui-nav-img" src="/images/profile.jpg">XXX</a>
         <div>
           <ul>
             <li class="text-black"><a href="javascript:(0);">个人中心</a></li>
@@ -88,15 +90,15 @@
           </ul>
         </div>
       </li>
-      <li class="func-6" id="loginNo">
+      <li class="func-6">
         <a href="/login"><img class="layui-nav-img" src="/images/profile.jpg">登录</a>
       </li>
     </ul>
   </div>
 </div>
 <div class="content-img">
-  <div class="title">植物识别</div>
-  <div class="text">支持百种花卉识别，返回中英文名称</div>
+  <div class="title">人脸识别</div>
+  <div class="text">基于人的脸部特征信息进行身份识别</div>
   <div class="content-img-button">
     <a href="/about">
       <button>联系我们</button>
@@ -107,18 +109,26 @@
   <h2>功能介绍</h2>
   <div class="func-1">
     <div>
-      <h2 class="h2_1">识别物体名称</h2>
+      <h2 class="h2_1">人脸检测定位</h2>
       <div>
         <ul>
-          <li class="text-little">支持识别上百种花卉，返回植物名称</li>
+          <li class="text-little">检测图片中的人脸并标记出人脸坐标，支持同时识别多张人脸</li>
         </ul>
       </div>
     </div>
     <div>
-      <h2 class="h2_2">获取百科信息</h2>
+      <h2 class="h2_2">图片质量控制</h2>
       <div>
         <ul>
-          <li class="text-little">支持返回百科词条URL</li>
+          <li class="text-little">分析图片中的多种特征，确保图片符合质量标准</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h2 class="h2_3">150关键点定位</h2>
+      <div>
+        <ul>
+          <li class="text-little">精准定位包括双眼、口、鼻等人脸五官关键点</li>
         </ul>
       </div>
     </div>
@@ -129,11 +139,13 @@
     <!--      <img src="images/plant/xiao1.jpg" alt="image1" id="img-big">-->
     <!--    </div>-->
     <div class="img-big" id="imgBigDiv">
-      <a href="https://baike.baidu.com/item/%E7%8E%AB%E7%91%B0/63206" id='detectResult' target="_blank">识别结果:
-        玫瑰(rose)</a>
+<!--      <a href="https://baike.baidu.com/item/%E7%8E%AB%E7%91%B0/63206" id='detectResult' target="_blank">识别结果:-->
+<!--        玫瑰(rose)</a>-->
+      <img src="/images/face/textImg2Work.jpg" alt="" class="img-big-up" id="imgBigUp"><br>
+      <img src="/images/face/face1.jpg" alt="" class="img-big-down" id="imgBigDown">
       <div class="upload">
         <form action="get">
-          <input class="input-url-button" id='inputUrl' placeholder="请输入网络图片URL" type="text" value="">
+          <input class="input-url-button" id='inputUrl' placeholder="请输入网络图片URL" type="text">
           <input class="detect-button" id='detectButton' type="button" value="检测"> 或
           <input class="upload-local-button" type="button" value="本地上传">
         </form>
@@ -143,27 +155,61 @@
       </div>
     </div>
     <div class="img-small" id="img-small">
-<!--      <img alt="" src="/images/plant/xiao1.jpg">-->
-      <img alt="" src="http://tuyun.slienceme.xyz/media/image/1/2a285938af86d75c5209723835464635.jpg">
-<!--      <img alt="" src="/images/plant/xiao2.jpg">-->
-      <img alt="" src="http://tuyun.slienceme.xyz/media/image/1/1f666b44ba2f32254a7b9c27c288c592.jpg">
-<!--      <img alt="" src="/images/plant/xiao3.jpg">-->
-      <img alt="" src="http://tuyun.slienceme.xyz/media/image/1/a4c78d31a676cd926709433e93449550.jpg">
-<!--      <img label='康乃馨' baike='https://baike.baidu.com/item/%E5%BA%B7%E4%B9%83%E9%A6%A8/34029?fromModule=lemma_search-box' src="/images/plant/xiao4.jpg">-->
-      <img label='康乃馨' baike='https://baike.baidu.com/item/%E5%BA%B7%E4%B9%83%E9%A6%A8/34029?fromModule=lemma_search-box' src="http://tuyun.slienceme.xyz/media/image/1/1f666b44ba2f32254a7b9c27c288c592.jpg">
+      <img alt="" src="http://tuyun.slienceme.xyz/media/image/1/36df46905e1dece94ae51b394c94cec9.jpg">
+      <img alt="" src="http://tuyun.slienceme.xyz/media/image/1/ff4522231fcf423d994c7402c8ca1fad.jpg">
+      <img alt="" src="http://tuyun.slienceme.xyz/media/image/1/d3c3ddd3a84424319336e7fea0fba15f.jpg">
+      <img alt="" src="http://tuyun.slienceme.xyz/media/image/1/e089ed11292a7abca5c76578d8c6a8b6.jpg">
     </div>
   </div>
-  <h2>应用场景</h2>
-  <div class="func-3">
-    <div class="left-text">
-      <h2 class="h2_1">拍照识图</h2>
-      <div class="text-little">
-        在移动设备上，通过拍摄图片，识别图中花卉植物，广泛应用于拍照识图应用中。
+  <h2>特色优势</h2>
+  <div class="func-4">
+    <div>
+      <h2 class="h2_1">主流算法</h2>
+      <div>
+        <ul>
+          <li class="text-little">基于caffe框架和海量数据训练，算法识别准确率高</li>
+        </ul>
       </div>
     </div>
-    <div class="right-img">
-      <img alt="image1" src="/images/plant/plant-feature.jpg">
+    <div>
+      <h2 class="h2_2">服务稳定高效</h2>
+      <div>
+        <ul>
+          <li class="text-little">提供企业级稳定、精确的大流量服务。支持毫秒级的识别响应能力、弹性灵活的高并发</li>
+        </ul>
+      </div>
     </div>
+    <div>
+      <h2 class="h2_3">灵活简单易用</h2>
+      <div>
+        <ul>
+          <li class="text-little">可对SDK进行二次开发，灵活调整业务代码，实现不同的业务功能</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <h2>使用方式</h2>
+  <div class="func-5">
+    <div>
+      <h2 class="h2_1">
+        离线采集SDK</h2>
+      <div>
+        <ul>
+          <li class="text-little">集成到单台硬件设备中，实现人脸检测、人脸关键点采集、在设备端离线完成从静态图片、视频流中检测并捕获人脸功能</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h2 class="h2_2">
+        私有化部署</h2>
+      <div>
+        <ul>
+          <li class="text-little">提供一体机和软件部署包两种私有化方案 ，在本地服务器部署后，实现图片中的人脸检测、关键点定位和属性识别功能，支持分布式高并发业务处理，适用于安防、监控等场景</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="func-3">
     <div class="bottom-button">
       <a href="/about">
         <button>联系我们</button>
@@ -188,6 +234,6 @@
 <script src="/layui/layui.js"></script>
 <script src="/js/init.js"></script>
 <script src="/js/login.js"></script>
-<script src="/js/plant.js"></script>
+<script src="/js/face.js"></script>
 </html>
-
+<!--coderby:slience_me-->
