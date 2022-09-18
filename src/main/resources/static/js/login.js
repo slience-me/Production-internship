@@ -25,15 +25,28 @@ layui.use('layer', function () {
   }
 
   $(function () {
+    $("#logout").click(function () {
+      localStorage.removeItem('userId');
+      localStorage.removeItem('user');
+      $("#loginAlready").css("display","none");
+      $("#loginNo").css("display","block");
+      window.location.reload();
+    })
+
+  });
+
+  $(function () {
     $("#login-form").click(function () {
+      event.returnValue=false;
       if (checkUsername_login() && checkPassword_login()) {
         $.post("login", $("#loginForm").serialize(), function (data) {
-          if (data.code === 0) {
-            console.log("登录成功!");
-            window.location.replace("http://127.0.0.1:8080/index");
-          } else {
+          if (data.code === 1) {
             console.log("登录失败!");
+          } else {
+            console.log("登录成功!");
             msg = data.msg;
+            localStorage.setItem('userId', data.userId);
+            localStorage.setItem('user', data.user);
             layer.alert(msg, {
               time: 3 * 1000, success: function (layero, index) {
                 let timeNum = this.time / 1000, setText = function (start) {
@@ -46,6 +59,7 @@ layui.use('layer', function () {
                 clearInterval(this.timer);
               }
             });
+            window.location.href="/index";
           }
         }, "json");
       }

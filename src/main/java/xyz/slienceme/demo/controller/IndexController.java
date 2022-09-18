@@ -49,19 +49,19 @@ public class IndexController {
         return "login";
     }
 
-    @GetMapping("/getStatus")
-    @ResponseBody
-    public HashMap<String, String> GetStatus(Integer Id) {
-        User user = userService.getStatus(Id);
-        HashMap<String, String> data = new HashMap<>();
-        if (user.getStatus() == 1) {
-            data.put("user", user.getRealname());
-            return data;
-        } else {
-            return data;
-        }
-
-    }
+//    @GetMapping("/getStatus")
+//    @ResponseBody
+//    public HashMap<String, String> GetStatus(Integer Id) {
+//        User user = userService.getStatus(Id);
+//        HashMap<String, String> data = new HashMap<>();
+//        if (user.getStatus() == 1) {
+//            data.put("user", user.getRealname());
+//            return data;
+//        } else {
+//            return data;
+//        }
+//
+//    }
 
     @PostMapping("/login")
     @ResponseBody
@@ -76,14 +76,19 @@ public class IndexController {
         } else {
             User user = userService.login(userName, passWord);
             System.out.println(user);
+
             if (Objects.isNull(user)) {
                 data.put("code", "1");
                 data.put("msg", "登录失败！");
+
                 return data;
             } else {
                 userService.updateById(user.getId(), 1);
+                Integer Id = user.getId();
                 data.put("code", "0");
                 data.put("msg", "登录成功！");
+                data.put("userId", String.valueOf(Id));
+                data.put("user",user.getRealname());
                 return data;
             }
         }
@@ -110,6 +115,7 @@ public class IndexController {
         }
         return "";
     }
+
     @RequestMapping(value="/getResultface",method=RequestMethod.POST)
     @ResponseBody
     public String getResultface(String fileUrl){
